@@ -1,10 +1,14 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import colorSharp from "../assets/img/color-sharp.png";
+import skill1 from "../assets/img/skill-1.svg";
+import skill2 from "../assets/img/skill-2.svg";
+import skill3 from "../assets/img/skill-3.svg";
+import skill4 from "../assets/img/skill-4.svg";
+import skill5 from "../assets/img/skill-5.svg";
+import skill6 from "../assets/img/skill-6.svg";
+import colorSharp from "../assets/img/color-sharp.jpg";
+
 
 export const Skills = () => {
     const responsive = {
@@ -33,31 +37,39 @@ export const Skills = () => {
                 <Row>
                     <Col>
                         <div className="skill-bx">
-                            <h2>Skills</h2>
+                            <h2>Technical Skills</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br></br> Fusce fringilla vitae diam vitae scelerisque</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Image"></img>
-                                    <h5>Html</h5>
+                                    <img src={skill1} alt="Image"></img>
+                                    <h5>Laravel</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image"></img>
-                                    <h5>Css</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter3} alt="Image"></img>
+                                    <img src={skill2} alt="Image"></img>
                                     <h5>Reactjs</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Image"></img>
-                                    <h5>Laravel</h5>
+                                    <img src={skill3} alt="Image"></img>
+                                    <h5>Php</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={skill4} alt="Image"></img>
+                                    <h5>Javascript</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={skill5} alt="Image"></img>
+                                    <h5>Css</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={skill6} alt="Image"></img>
+                                    <h5>Html</h5>
                                 </div>
                             </Carousel>
                         </div>
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={colorSharp}></img>
+            {/* <img className="background-image-left" src={colorSharp}></img> */}
         </section>
       );
 }
