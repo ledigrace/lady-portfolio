@@ -535,6 +535,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   margin-bottom: 30px;
+  font-family: 'Comic Neue', cursive;
 }
 .contact form input, .contact form textarea {
   width: 100%;
@@ -545,9 +546,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 0 8px 0;
   padding: 18px 26px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
+  font-family: 'Comic Neue', cursive;
 }
 .contact form input:focus, .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
@@ -567,23 +569,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #000;
   background-color: #E3D7C9;
   padding: 14px 48px;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'Comic Neue', cursive;
   margin-top: 25px;
   border-radius: 50px;
   position: relative;
   transition: 0.3s ease-in-out;
+  border: 1px solid #000;
 }
 .contact form button span {
   z-index: 1;
   position: relative;
+
 }
 .contact form button:hover {
-  color: #fff;
+  color: #000;
   border-radius: 50px;
 }
+
 .contact form button::before {
   content: "";
-  background: #D8B384;
+  /* background: #D8B384; */
   border-radius: 50px;
   width: 0;
   height: 100%;
@@ -592,6 +598,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
+
 }
 .contact form button:hover::before {
   width: 100%;
@@ -669,10 +676,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer img {
   width: 26%;
 }
+.footer-logo{
+  font-weight: 700;
+  font-family: 'Comic Neue', cursive;
+}
 .footer p {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   color: #494949;
   letter-spacing: 0.5px;
   margin-top: 20px;
+  font-family: 'Comic Neue', cursive;
 }
