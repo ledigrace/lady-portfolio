@@ -98,12 +98,18 @@ nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 400;
+  font-weight: 700;
   color: #000 !important;
+  font-family: 'Comic Neue', cursive;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 20px;
   opacity: 0.75;
+}
+.logo-nav{
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+  font-size: 40px;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
@@ -154,12 +160,13 @@ span.navbar-text {
 .navbar-text button {
   font-weight: 700;
   color: #000;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   padding: 18px 34px;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'Comic Neue', cursive;
   margin-left: 18px;
 	position: relative;
-	background-color: transparent;
+	background-color: #d8b484d3;
 	transition: 0.3s ease-in-out;
 }
 .navbar-text button span {
@@ -247,6 +254,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(90.21deg, #D9B485 -5.91%, #D9B485 111.58%);
   border: 1px solid #CFE6D1;
   font-size: 20px;
+  font-family: 'Comic Neue', cursive;
   margin-bottom: 16px;
   display: inline-block;
   color: #fff;
@@ -258,13 +266,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  font-family: 'Comic Neue', cursive;
+}
+.txt-rotate{
+  color: #D9B485;
 }
 .banner p {
   color: #494949;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+  font-family: 'Comic Neue', cursive;
 }
 .banner button {
   color: #000;
@@ -280,7 +293,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #000;
   border: 1px solid #000;
   padding: 18px 34px;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'Comic Neue', cursive;
   margin-left: 18px;
 	position: relative;
 	background-color: transparent;
@@ -336,13 +350,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
+  font-family: 'Comic Neue', cursive;
 }
 .skill p {
     color: #494949;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
+    font-family: 'Comic Neue', cursive;
 }
 .skill-slider {
   width: 80%;
@@ -368,9 +384,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: #fff;
 }
 .project h2 {
-	font-size: 45px;
+	font-size: 55px;
 	font-weight: 700;
   text-align: center;
+  font-family: 'Comic Neue', cursive;
 }
 .project p {
   color: #494949;
@@ -380,6 +397,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 14px auto 30px auto;
   text-align: center;
   width: 56%;
+  font-family: 'Comic Neue', cursive;
 }
 .project .nav.nav-pills {
   width: 72%;
@@ -404,6 +422,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
   text-align: center;
   z-index: 0;
+  font-family: 'Comic Neue', cursive;
 }
 .project .nav.nav-pills .nav-link::before {
     content: "";
@@ -415,6 +434,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     left: 0;
     z-index: -1;
     transition: 0.3s ease-in-out;
+    font-family: 'Comic Neue', cursive;
 }
 .project .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
@@ -439,6 +459,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: 1px solid #000;
 }
 .proj-imgbx::before {
   content: "";
@@ -461,6 +483,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  font-family: 'Comic Neue', cursive;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
@@ -471,12 +494,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+  font-family: 'Comic Neue', cursive;
 }
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 0.8px;
+}
+.link-visit{
+  color: #000;
+  font-family: 'Comic Neue', cursive;
+  font-size: 20px;
+  font-weight: 700;
+}
+.link-icon{
+  width: 18px;
 }
 .background-image-right {
   top: 20%;

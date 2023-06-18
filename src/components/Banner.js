@@ -5,6 +5,8 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+import resumeFile from "../assets/resume/resume.pdf";
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -47,6 +49,10 @@ export const Banner = () => {
     }
   }
 
+  const handleDownloadCV = () => {
+    window.open(resumeFile, "_blank");
+  };
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -56,17 +62,19 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Lady Grace Cannu`} <br></br><span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Developer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
-                  <button className="downloadcv">Download CV</button>
+                <h1>{`Hi! I'm Lady Grace`}, <br></br><span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Developer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Im a Full Stack Web Developer living in the Philippines.</p>
+                  <button className="downloadcv" onClick={handleDownloadCV}>Download Resume</button>
               </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-                <div>
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   <img src={headerImg} alt="Header Img"/>
-                </div>
+                </div>}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>

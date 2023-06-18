@@ -37,8 +37,7 @@ export const Skills = () => {
                 <Row>
                     <Col>
                         <div className="skill-bx">
-                            <h2>Technical Skills</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br></br> Fusce fringilla vitae diam vitae scelerisque</p>
+                            <h2 className="mb-5">Technical Skills</h2>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={skill1} alt="Image"></img>
@@ -69,7 +68,6 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
-            {/* <img className="background-image-left" src={colorSharp}></img> */}
         </section>
       );
 }

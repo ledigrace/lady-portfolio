@@ -38,7 +38,7 @@ export const NavBar = () => {
         <Container>
           <Navbar.Brand href="/">
             {/* <img src={logo} alt="Logo" /> */}
-            <h2>Lady Grace</h2>
+            <h2 className="logo-nav">Lady Grace</h2>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-passport--passport-webapp&_ga=2.251963466.258279234.1686983915-280137961.1686983915"><img src={navIcon1} alt="" /></a>
                 <a href="https://web.facebook.com/lalalalady21"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://github.com/ledigrace"><img src={navIcon3} alt="" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
