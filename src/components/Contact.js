@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Swal from 'sweetalert2';
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -10,27 +11,84 @@ export const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-
+  
     const formData = new FormData(e.target);
-
+    let hasEmptyFields = false;
+  
+    // Check if any input field or textarea is empty
+    for (let value of formData.values()) {
+      if (!value) {
+        hasEmptyFields = true;
+        break;
+      }
+    }
+  
+    if (hasEmptyFields) {
+      Swal.fire({
+        title: 'Error',
+        text: 'Please fill in all fields',
+        icon: 'error',
+      });
+      setButtonText("Submit");
+      return;
+    }
+  
+    const phoneNumber = formData.get("phone");
+    if (phoneNumber && !/^\d+$/.test(phoneNumber)) {
+      Swal.fire({
+        title: 'Error',
+        text: 'Invalid phone number. Please enter digits only and no space.',
+        icon: 'error',
+      });
+      setButtonText("Submit");
+      return;
+    }
+  
+    const emailAddress = formData.get("email");
+    if (emailAddress && !emailAddress.includes("@")) {
+      Swal.fire({
+        title: 'Error',
+        text: 'Invalid email address. Please enter a valid email.',
+        icon: 'error',
+      });
+      setButtonText("Submit");
+      return;
+    }
+  
     fetch('https://api.apispreadsheets.com/data/OKSgZsiUYEtcqGmh/', {
       method: 'POST',
       body: formData
     })
       .then(response => {
         if (response.ok) {
-          alert("Form Data Submitted :)");
+          Swal.fire({
+            title: 'Success',
+            text: 'Thank you for reaching out! Your message has been successfully submitted. :)',
+            icon: 'success',
+          }).then(() => {
+            // Clear the input fields and textarea
+            e.target.reset();
+          });
         } else {
-          alert("There was an error :(");
+          Swal.fire({
+            title: 'Error',
+            text: 'There was an error :(',
+            icon: 'error',
+          });
         }
         setButtonText("Submit");
       })
       .catch(error => {
-        alert("There was an error :(");
+        Swal.fire({
+          title: 'Error',
+          text: 'There was an error :(',
+          icon: 'error',
+        });
         setButtonText("Submit");
       });
   };
-
+  
+  
   return (
     <section className="contact" id="connect">
       <Container>
