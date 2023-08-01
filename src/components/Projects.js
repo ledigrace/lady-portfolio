@@ -40,6 +40,7 @@ export const Projects = () => {
           title: "Bioscreator",
           description: "Design & Development",
           imgUrl: projImg5,
+          link: "https://ledigrace.github.io/portfolio---Bioscreator/index.html",
         },
         // {
         //   title: "Business Startup",
