@@ -5,6 +5,7 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.png";
 import TrackVisibility from 'react-on-screen';
 
 
@@ -35,11 +36,11 @@ export const Projects = () => {
           imgUrl: projImg4,
           link: "https://dahnjohn.github.io/miniGames.github.io/",
         },
-        // {
-        //   title: "Business Startup",
-        //   description: "Design & Development",
-        //   imgUrl: projImg2,
-        // },
+        {
+          title: "Bioscreator",
+          description: "Design & Development",
+          imgUrl: projImg5,
+        },
         // {
         //   title: "Business Startup",
         //   description: "Design & Development",
